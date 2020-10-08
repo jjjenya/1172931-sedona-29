@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="utf-8">
+    <title>Седона</title>
+    <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700&display=swap&subset=cyrillic" rel="stylesheet">
+    <link href="css/normalize.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <nav>
+            <a href="index.html">
+                <img src="#" alt="Логотип" width="244" height="56">
+            </a>
+            <ul>
+                <li>
+                    <a href="index.html"> Информация </a>
+                </li>
+                <li>
+                    <a href="#"> Фото и видео </a>
+                </li>
+                <li>
+                    <a href="#"> Карта штата Аризона </a>
+                </li>
+                <li>
+                    <a href="catalog.html"> Гостиницы </a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section>
+            <h1>Расширенный поиск гостиницы</h1>
+            <h2>Фильтры</h2>
+
+            <form method="get" action="#">
+                <fieldset>
+                    <legend>Инфраструктура:</legend>
+                    <ul>
+                        <li>
+                            <label for="filter_pool">
+                                Бассейн
+                            </label>
+                            <input type="checkbox" name="pool" id="filter_pool" checked>
+                        </li>
+                        <li>
+                            <label for="filter_parking">
+                                Парковка
+                            </label>
+                            <input type="checkbox" name="parking" id="filter_parking">
+                        </li>
+                        <li>
+                            <label for="filter_wi-fi">
+                                Wi-Fi
+                            </label>
+                            <input type="checkbox" name="wi-fi" id="filter_wi-fi">
+                        </li>
+                    </ul>
+                </fieldset>
+
+                <fieldset>
+                    <legend>Тип жилья:</legend>
+                    <ul>
+                        <li>
+                            <label for="filter_hotel">
+                                Гостиница
+                            </label>
+                            <input type="checkbox" name="hotel" id="filter_hotel" checked>
+                        </li>
+                        <li>
+                            <label for="filter_motel">
+                                Мотель
+                            </label>
+                            <input type="checkbox" name="motel" id="filter_motel" checked>
+                        </li>
+                        <li>
+                            <label for="filter_apartments">
+                                Апартаменты
+                            </label>
+                            <input type="checkbox" name="apartments" id="filter_apartments" checked>
+                        </li>
+                    </ul>
+                </fieldset>
+                <fieldset>
+                    <legend>Стоимость в сутки (Р):</legend>
+                    <input type=range name="cost" min="0" max="50000" step="100">3000
+                </fieldset>
+
+                <button type="submit">Показать</button>
+            </form>
+       
+        </section>
+        <section>
+            <h3 class="visually-hidden">Результаты поиска</h3>
+
+
+            <p class="found">Найдено:3</p>
+            <p class="found-sorting">сортировка</p>
+            <ul class="found-index" >
+                <li>По цене</li>
+                <li>По типу</li>
+                <li>По рейтингу</li>
+            </ul>
+            <ul>
+                <li>
+                    <h4>Amara Resort & Spa</h4>
+                    <img src="img/hotel-А.jpg" 
+                        alt="Фотография Amara Resort & Spa" 
+                        width="135" 
+                        height="90">
+                    <p>Гостиница</p>
+                    <p>От 4000 Р.</p>
+                    <p>Рейтинг: 8,5</p>
+                    <a href="#">Подробнее</a>
+                    <button type="button">Забронировать</button>
+                </li>
+                <li>
+                    <h4>Desert Quail Inn</h4>
+                    <img src="img/hotel-D.jpg" 
+                    alt="Фотография Desert Quail Inn" 
+                    width="135" 
+                    height="90">
+                    <p>Мотель</p>
+                    <p>От 3000 Р.</p>
+                    <p>Рейтинг: 8,9</p>
+                    <a href="#">Подробнее</a>
+                    <button type="button">Забронировать</button>
+                </li>
+                <li>
+                    <h4>Villas at Poco Diablo</h4>
+                    <img src="img/hotel-V.jpg" 
+                        alt="Фотография Villas at Poco Diablo" 
+                        width="135" 
+                        height="90">
+                    <p>Апартаменты</p>
+                    <p>От 2000 Р.</p>
+                    <p>Рейтинг: 9,2</p>
+                    <a href="#">Подробнее</a>
+                    <button type="button">Забронировать</button>
+                </li>
+            </ul>
+        </section>
+
+    </main>
+    <footer>
+        <div class="footer-contacts">
+            <p>#VISITSEDONA</p>
+            <p>Тел: +7(495) 666-02-66</p>
+            <div class="footer-social">
+                <ul>
+                    <li>
+                        <a class="social-button" href="#" aria-label="Twitter">Twitter</a>
+                    </li>
+                    <li>
+                        <a class="social-button" href="#" aria-label="Facebook">Facebook</a>
+                    </li>
+                    <li>
+                        <a class="social-button" href="#" aria-label="Youtube">Youtube</a>
+                    </li>
+                </ul>
+            </div>
+            <p class="footer-web">
+                Website by
+                <a class="footer-copyright" href="https://htmlacademy.ru/intensive/htmlcss">HTML Academy</a>
+            </p>
+        </div>
+    </footer>
+</body>
+
+</html>
