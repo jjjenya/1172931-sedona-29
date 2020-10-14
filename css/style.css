@@ -1,0 +1,276 @@
+/* Variables */
+
+:root {
+
+/* font, focus +/-, navigation-hover */
+--basic-black: #000000;
+
+/* background */
+--basic-grеy: #888888;
+
+/* navigation, container, recommendation, footer */
+--basic-white: #FFFFFF;
+
+/* features 1, 2; button; active +/-; button-search-hover; navigation-focus  */
+--basic-blue-grey: #81B3D2;
+
+/* features 3, 4, 5 */
+--basic-grey-light: #EEEEEE;
+
+/* button search focus */
+--special-blue-grey-darker: #669EC0;
+
+/* button search active */
+--special-blue-grey-dark:  #5496BD;
+    
+/* search tittle */
+--special-brown:#766357;
+
+/* search date, age */ 
+--special-grey-light: #F2F2F2;
+
+/* search plus, minus, hover +/-*/
+--special-grey-dark: #A9A9A9;
+
+/* footer opacity */
+--special-white-opacity: rgba(255, 255, 255, 0.9);
+
+/* navigation-active */
+--special-black-opacity: rgba(0,0,0, 0.3);
+
+/* navigation-current*/
+--special-brown: #766357;
+}
+
+
+
+/* Global */
+
+body {
+    min-width: 1220px;
+    margin: 0;
+    padding: 0;
+
+    font-family: "PT Sans", Arial, sans-serif;
+    font-size: 14px;
+    line-height: 24px;
+    font-weight: 700;
+
+    color: var(--basic-black);
+    text-transform: uppercase;
+
+    background-color: var(--basic-white);
+    background-image: url("#");
+    background-position: top center;
+    background-repeat: no-repeat;
+}
+
+.page a {
+    text-decoration: none;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+
+/* Navigation */
+
+.main-navigation {
+    font-size: 14px;
+    line-height: 26px;
+    color: var(--basic-black);
+    background-color: transparent;
+}
+  
+.site-navigation {
+    list-style: none;
+}
+
+.site-navigation-current a:not([href]) {
+    background-color: var(--basic-white);
+}
+   
+.site-navigation a {
+    color: var(--special-brown);
+}
+  
+.site-navigation a:hover{
+    color: var(--basic-black);
+}
+
+.site-navigation a:focus {
+    color: var(--basic-blue-grey);
+}
+
+.site-navigation a:active {
+    color: var(--special-black-opacity);
+   
+}
+
+
+/* Features */
+
+.feature {
+    text-align: center;
+}
+
+.features-list {
+    list-style: none;
+}
+  
+.feature-item {
+    text-align: center;
+    line-height: 21px;
+    font-weight: 400;
+}
+
+.feature-item h3 {
+    font-size: 21px;
+    font-weight: 700;
+}
+
+.feature-wrapper-city,
+.feature-wrapper-bridge {
+    color: var(--basic-white);
+    background-color: var(--basic-blue-grey);
+}
+
+.feature-item.square,
+.feature-item.road,
+.feature-item.tourist {
+    background-color: var(--basic-grey-light);
+}
+
+
+/* Recommendetion */
+
+.recommendation-list {
+    list-style: none;
+}
+  
+.recommendation-item {
+    text-align: center;
+    line-height: 21px;
+    font-weight: 400;
+}
+
+.recommendation-item h3 {
+    font-size: 21px;
+    font-weight: 700;
+}    
+  
+
+/* Search-preamble */
+
+.search {
+    text-align: center;
+}
+
+.search .interested-question {
+    font-weight: 700;
+    font-size: 30px;
+}
+
+.search .interested-direction {
+    font-weight: 400;
+}
+
+
+/* Search-form */
+
+.search h4 {
+    font-weight: 700;
+    font-size: 21px;
+    line-height: 26px;
+    color: var(--basic-white);
+    background-color: var(--special-brown);
+}
+
+.button {
+    font: inherit;
+    text-align: center;
+    border: none;
+}
+
+.button-search {
+    color: var(--basic-white);
+    vertical-align: middle;
+    text-transform: uppercase;
+    background-color: var(--basic-blue-grey);
+    font-size: 21px;
+    line-height: 26px;
+    padding: 16px 182px 16px 181px;
+}
+
+.button-search:hover{
+    background-color: var(--basic-blue-grey);
+} 
+
+.button-search:focus{
+    background-color: var(--special-blue-grey-darker);
+} 
+
+.button-search:active{
+    background-color: var(--special-blue-grey-dark);
+} 
+
+
+.button-age-counter button {
+    background-color: var(--special-grey-light);
+}
+
+.button-age-counter button:hover {
+    color: var(--special-grey-dark);
+}
+
+.button-age-counter button:focus {
+    color: var(--basic-black);
+}
+
+.button-age-counter button:active{
+    color: var(--basic-blue-grey);
+}  
+
+ 
+/* Footer  */
+
+.appointment-item input:focus {
+    border-color: var(--special);
+}
+
+.page-footer {
+    background-color: var(--special-white-opacity);
+    text-align: center;
+}
+
+.footer-contacts{
+    font-size: 21px;
+    line-height: 26px;
+}
+
+.footer-social li {
+    list-style: none;
+}
+
+.footer-web {
+    font-size: 14px;
+    line-height: 26px;
+    text-align: center;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

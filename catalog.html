@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html class="page" lang="ru">
 
 <head>
     <meta charset="utf-8">
@@ -9,13 +9,14 @@
     <link href="css/style.css" rel="stylesheet">
 </head>
 
-<body>
-    <header>
-        <nav>
-            <a href="index.html">
+<body class="page-body">
+
+    <header class="main-header">
+        <nav class="main-navigation">
+            <a class="main-header-logo" href="index.html">
                 <img src="#" alt="Логотип" width="244" height="56">
             </a>
-            <ul>
+            <ul class="site-navigation">
                 <li>
                     <a href="index.html"> Информация </a>
                 </li>
@@ -31,75 +32,63 @@
             </ul>
         </nav>
     </header>
-    <main>
-        <section>
-            <h1>Расширенный поиск гостиницы</h1>
-            <h2>Фильтры</h2>
 
-            <form method="get" action="#">
-                <fieldset>
+    <main>
+        <section class="advanced-search">
+            <h1 class="visually-hidden">Расширенный поиск гостиницы</h1>
+            <h2 class="visually-hidden">Фильтры</h2>
+
+            <form class="filters" method="get" action="#">
+                <fieldset class="infrastructure">
                     <legend>Инфраструктура:</legend>
                     <ul>
                         <li>
-                            <label for="filter_pool">
-                                Бассейн
-                            </label>
-                            <input type="checkbox" name="pool" id="filter_pool" checked>
+                            <label for="filter-pool">Бассейн</label>
+                            <input type="checkbox" name="pool" id="filter-pool" checked>
                         </li>
                         <li>
-                            <label for="filter_parking">
-                                Парковка
-                            </label>
-                            <input type="checkbox" name="parking" id="filter_parking">
+                            <label for="filter-parking">Парковка</label>
+                            <input type="checkbox" name="parking" id="filter-parking">
                         </li>
                         <li>
-                            <label for="filter_wi-fi">
-                                Wi-Fi
-                            </label>
-                            <input type="checkbox" name="wi-fi" id="filter_wi-fi">
+                            <label for="filter-wi-fi">Wi-Fi</label>
+                            <input type="checkbox" name="wi-fi" id="filter-wi-fi">
                         </li>
                     </ul>
                 </fieldset>
 
-                <fieldset>
+                <fieldset class="housing">
                     <legend>Тип жилья:</legend>
                     <ul>
                         <li>
-                            <label for="filter_hotel">
-                                Гостиница
-                            </label>
-                            <input type="checkbox" name="hotel" id="filter_hotel" checked>
+                            <label for="filter-hotel">Гостиница</label>
+                            <input type="checkbox" name="hotel" id="filter-hotel" checked>
                         </li>
                         <li>
-                            <label for="filter_motel">
-                                Мотель
-                            </label>
-                            <input type="checkbox" name="motel" id="filter_motel" checked>
+                            <label for="filter-motel">Мотель</label>
+                            <input type="checkbox" name="motel" id="filter-motel" checked>
                         </li>
                         <li>
-                            <label for="filter_apartments">
-                                Апартаменты
-                            </label>
-                            <input type="checkbox" name="apartments" id="filter_apartments" checked>
+                            <label for="filter-apartments">Апартаменты</label>
+                            <input type="checkbox" name="apartments" id="filter-apartments" checked>
                         </li>
                     </ul>
                 </fieldset>
-                <fieldset>
+                <fieldset class="cоst">
                     <legend>Стоимость в сутки (Р):</legend>
-                    <input type=range name="cost" min="0" max="50000" step="100">3000
+                    от 0<input type=range name="cost" min="0" max="50000" step="100"> до 3000
+                    <button class="button" type="submit">Показать</button>
                 </fieldset>
-
-                <button type="submit">Показать</button>
             </form>
-       
+
         </section>
-        <section>
+        <section class="searching-results">
             <h3 class="visually-hidden">Результаты поиска</h3>
 
 
             <p class="found">Найдено:3</p>
             <p class="found-sorting">сортировка</p>
-            <ul class="found-index" >
+            <ul class="found-index">
                 <li>По цене</li>
                 <li>По типу</li>
                 <li>По рейтингу</li>
@@ -107,48 +96,41 @@
             <ul>
                 <li>
                     <h4>Amara Resort & Spa</h4>
-                    <img src="img/hotel-А.jpg" 
-                        alt="Фотография Amara Resort & Spa" 
-                        width="135" 
-                        height="90">
+                    <img src="img/hotel-А.jpg" alt="Фотография Amara Resort & Spa" width="135" height="90">
                     <p>Гостиница</p>
                     <p>От 4000 Р.</p>
                     <p>Рейтинг: 8,5</p>
                     <a href="#">Подробнее</a>
-                    <button type="button">Забронировать</button>
+                    <button class="button" type="button">Забронировать</button>
                 </li>
                 <li>
                     <h4>Desert Quail Inn</h4>
-                    <img src="img/hotel-D.jpg" 
-                    alt="Фотография Desert Quail Inn" 
-                    width="135" 
-                    height="90">
+                    <img src="img/hotel-D.jpg" alt="Фотография Desert Quail Inn" width="135" height="90">
                     <p>Мотель</p>
                     <p>От 3000 Р.</p>
                     <p>Рейтинг: 8,9</p>
                     <a href="#">Подробнее</a>
-                    <button type="button">Забронировать</button>
+                    <button class="button" type="button">Забронировать</button>
                 </li>
                 <li>
                     <h4>Villas at Poco Diablo</h4>
-                    <img src="img/hotel-V.jpg" 
-                        alt="Фотография Villas at Poco Diablo" 
-                        width="135" 
-                        height="90">
+                    <img src="img/hotel-V.jpg" alt="Фотография Villas at Poco Diablo" width="135" height="90">
                     <p>Апартаменты</p>
                     <p>От 2000 Р.</p>
                     <p>Рейтинг: 9,2</p>
                     <a href="#">Подробнее</a>
-                    <button type="button">Забронировать</button>
+                    <button class="button" type="button">Забронировать</button>
                 </li>
             </ul>
         </section>
-
     </main>
-    <footer>
-        <div class="footer-contacts">
-            <p>#VISITSEDONA</p>
-            <p>Тел: +7(495) 666-02-66</p>
+
+    <footer class="page-footer main-footer">
+        <div class="container">
+            <div class="footer-contacts">
+                <p>#VISITSEDONA</p>
+                <p class="footer-phone">Тел: +7(495) 666-02-66</p>
+            </div>
             <div class="footer-social">
                 <ul>
                     <li>
@@ -164,7 +146,7 @@
             </div>
             <p class="footer-web">
                 Website by
-                <a class="footer-copyright" href="https://htmlacademy.ru/intensive/htmlcss">HTML Academy</a>
+                <a class="button footer-copyright" href="https://htmlacademy.ru/intensive/htmlcss">HTML Academy</a>
             </p>
         </div>
     </footer>
