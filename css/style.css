@@ -22,11 +22,11 @@
 
 /* button search active */
 --special-blue-grey-dark:  #5496BD;
-    
+
 /* search tittle */
 --special-brown:#766357;
 
-/* search date, age */ 
+/* search date, age */
 --special-grey-light: #F2F2F2;
 
 /* search plus, minus, hover +/-*/
@@ -35,11 +35,14 @@
 /* footer opacity */
 --special-white-opacity: rgba(255, 255, 255, 0.9);
 
-/* navigation-active */
+/* navigation-active, found-hover */
 --special-black-opacity: rgba(0,0,0, 0.3);
 
-/* navigation-current*/
+/* navigation-current, button-reservation */
 --special-brown: #766357;
+
+/* type-price */
+--special-black: #333333;
 }
 
 
@@ -74,6 +77,16 @@ img {
     height: auto;
 }
 
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+}
 
 /* Navigation */
 
@@ -83,7 +96,7 @@ img {
     color: var(--basic-black);
     background-color: transparent;
 }
-  
+
 .site-navigation {
     list-style: none;
 }
@@ -91,11 +104,11 @@ img {
 .site-navigation-current a:not([href]) {
     background-color: var(--basic-white);
 }
-   
+
 .site-navigation a {
     color: var(--special-brown);
 }
-  
+
 .site-navigation a:hover{
     color: var(--basic-black);
 }
@@ -106,7 +119,6 @@ img {
 
 .site-navigation a:active {
     color: var(--special-black-opacity);
-   
 }
 
 
@@ -119,7 +131,7 @@ img {
 .features-list {
     list-style: none;
 }
-  
+
 .feature-item {
     text-align: center;
     line-height: 21px;
@@ -149,7 +161,7 @@ img {
 .recommendation-list {
     list-style: none;
 }
-  
+
 .recommendation-item {
     text-align: center;
     line-height: 21px;
@@ -159,8 +171,8 @@ img {
 .recommendation-item h3 {
     font-size: 21px;
     font-weight: 700;
-}    
-  
+}
+
 
 /* Search-preamble */
 
@@ -206,15 +218,15 @@ img {
 
 .button-search:hover{
     background-color: var(--basic-blue-grey);
-} 
+}
 
 .button-search:focus{
     background-color: var(--special-blue-grey-darker);
-} 
+}
 
 .button-search:active{
     background-color: var(--special-blue-grey-dark);
-} 
+}
 
 
 .button-age-counter button {
@@ -231,14 +243,10 @@ img {
 
 .button-age-counter button:active{
     color: var(--basic-blue-grey);
-}  
-
- 
-/* Footer  */
-
-.appointment-item input:focus {
-    border-color: var(--special);
 }
+
+
+/* Footer  */
 
 .page-footer {
     background-color: var(--special-white-opacity);
@@ -254,6 +262,22 @@ img {
     list-style: none;
 }
 
+.social-button {
+    color: inherit;
+}
+
+.social-button:hover {
+    background-color: var(--basic-blue-grey);
+}
+
+.social-button:focus {
+    background-color: var(--special-blue-grey-darker);
+}
+
+.social-button:active {
+    background-color: var(--special-blue-grey-dark);
+}
+
 .footer-web {
     font-size: 14px;
     line-height: 26px;
@@ -261,6 +285,75 @@ img {
 }
 
 
+/* Hotels */
+
+/* Filters */
+
+.filters {
+    color: var(--basic-white);
+    background-color: var(--basic-black);
+    background-image: url("#");
+    background-position: 0 0;
+}
+
+.found {
+    font-size: 21px;
+    line-height: 26px; 
+}
+
+.found-index li {
+    list-style: none;
+    font-size: 12px;
+    line-height: 18px;
+}
+
+.found-index li:hover {
+    color: var(--special-black-opacity);
+    border: 1px dashed var(--basic-blue-grey);
+}
+
+.found-index li:focus {
+    color: var(--basic-blue-grey);
+    border: 1px dashed var(--basic-blue-grey);
+}
+
+.found-index li:active {
+    color: var(--basic-black);
+}
+
+.detayls-reservation a, 
+.detayls-reservation button {
+    vertical-align: middle;
+    text-transform: uppercase;
+    font-size: 14px;
+    line-height: 21px;
+    padding: 3px 17px 3px 16px;
+}
+
+.button-reservation {
+    color: var(--basic-white);
+    background-color: var(--special-brown);
+}
+
+.details {
+    color: var(--basic-white);
+    background-color: var(--basic-blue-grey);
+}
+
+.hotel {
+    list-style: none;
+}
+
+.hotel h4 {
+    font-size: 21px;
+    font-weight: 700;
+}
+
+.type-price p {
+    color: var(--special-black);
+    font-size: 14px;
+    line-height: 21px;
+}
 
 
 
