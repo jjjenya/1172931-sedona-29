@@ -38,8 +38,20 @@
 /* navigation-active, found-hover */
 --special-black-opacity: rgba(0,0,0, 0.3);
 
+/* button-search-active */
+--special-white-opacity-search: rgba(255, 255, 255, 0.3);
+
 /* navigation-current, button-reservation */
 --special-brown: #766357;
+
+/* tittle-search-focus */
+--special-brown-darker: #604E43;
+
+/* tittle-search-active */
+--special-brown-dark: #503E33;
+
+
+
 
 /* type-price */
 --special-black: #333333;
@@ -62,10 +74,15 @@ body {
     color: var(--basic-black);
     text-transform: uppercase;
 
-    background-color: var(--basic-white);
+    background-color: var(--basic-grеy);
     background-image: url("#");
     background-position: top center;
     background-repeat: no-repeat;
+}
+
+.page-body {
+    background-color: var(--basic-white);
+    width: 1200px;
 }
 
 .page a {
@@ -198,7 +215,24 @@ img {
     line-height: 26px;
     color: var(--basic-white);
     background-color: var(--special-brown);
+    padding: 30px 124px 30px 125px;
 }
+
+.search h4:hover{
+    background-color: var(--special-brown);
+}
+
+.search h4:focus{
+    background-color: var(--special-brown-darker);
+}
+
+.search h4:focus{
+    background-color: var(--special-brown-dark);
+    color: var(--special-white-opacity-search);
+}
+
+
+
 
 .button {
     font: inherit;
@@ -226,6 +260,7 @@ img {
 
 .button-search:active{
     background-color: var(--special-blue-grey-dark);
+    color: var(--special-white-opacity-search);
 }
 
 
@@ -309,12 +344,12 @@ img {
 
 .found-index li:hover {
     color: var(--special-black-opacity);
-    border: 1px dashed var(--basic-blue-grey);
+    border-bottom: 1px dashed var(--basic-blue-grey);
 }
 
 .found-index li:focus {
     color: var(--basic-blue-grey);
-    border: 1px dashed var(--basic-blue-grey);
+    border-bottom: 1px dashed var(--basic-blue-grey);
 }
 
 .found-index li:active {
