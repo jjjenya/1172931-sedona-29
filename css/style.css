@@ -62,7 +62,7 @@
 /* Global */
 
 body {
-    min-width: 1220px;
+    min-width: 1280px;
     margin: 0;
     padding: 0;
 
@@ -80,9 +80,17 @@ body {
     background-repeat: no-repeat;
 }
 
+.page {
+    height: 100%;
+}
+
 .page-body {
+    min-height: 100%;
+    /*width: 1200px; */   
+    display: grid;
+    grid-template-rows: min-content 1fr min-content;
+    align-content: start;
     background-color: var(--basic-white);
-    width: 1200px;
 }
 
 .page a {
@@ -105,16 +113,55 @@ img {
     overflow: hidden;
 }
 
-/* Navigation */
+.main-header {
+  margin-bottom: 100px;
+  outline: 5px solid rgba(225, 23, 147, 0.7);
+  outline-offset: -5px;
+}
+
+
+/* Main navigation */
 
 .main-navigation {
+    display: grid;
     font-size: 14px;
     line-height: 26px;
     color: var(--basic-black);
     background-color: transparent;
 }
 
+
+/* Container */
+
+.container {
+    width: 1200px;
+    margin: 0 auto;
+    /*padding: 0 10px;*/
+  }
+
+  .c1 {
+    display: grid;
+    grid-template-columns: 400px 400px 400px;
+    grid-template-rows: 400px 400px 400px;
+   }
+
+/* Logo */
+
+.main-header-logo {
+    order: 1;
+    justify-self: center;
+    outline: 5px solid rgba(204, 247, 10, 0.796);
+    outline-offset: -5px;
+}
+
 .site-navigation {
+    display: grid;
+    justify-self: center;
+    width: 1200px;
+    margin: 0 auto;
+    padding: 0 15px;
+    outline: 5px solid rgba(216, 13, 40, 0.3);
+    outline-offset: -5px;
     list-style: none;
 }
 
@@ -143,14 +190,19 @@ img {
 
 .feature {
     text-align: center;
+    outline: 5px solid rgba(255, 0, 0 , 0.3);
 }
 
 .features-list {
+    
+    margin: 0;
+    padding: 0;
     list-style: none;
 }
 
 .feature-item {
     text-align: center;
+    outline: 5px solid rgba(0, 255, 255 , 0.3);
     line-height: 21px;
     font-weight: 400;
 }
@@ -286,6 +338,13 @@ img {
 .page-footer {
     background-color: var(--special-white-opacity);
     text-align: center;
+    outline: 5px solid rgba(11, 253, 7, 0.7);
+    outline-offset: -5px;
+}
+
+.main-footer .container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
 }
 
 .footer-contacts{
